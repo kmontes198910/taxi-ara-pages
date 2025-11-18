@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Política de Privacidad - Taxi Ara Driver</title>
+    <title>Taxi Ara - Políticas de Privacidad</title>
     <style>
         * {
             margin: 0;
@@ -15,102 +15,158 @@
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
             line-height: 1.6;
             color: #333;
-            background-color: #f5f5f5;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
         }
 
         .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
+            max-width: 800px;
+            width: 100%;
             background-color: white;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
         }
 
         header {
+            background: linear-gradient(135deg, #FFA500 0%, #FF8C00 100%);
+            padding: 50px 30px;
             text-align: center;
-            padding: 40px 0;
-            border-bottom: 3px solid #FFA500;
-            margin-bottom: 40px;
+            color: white;
         }
 
         h1 {
-            color: #2c3e50;
             font-size: 2.5em;
             margin-bottom: 10px;
+            font-weight: 700;
         }
 
-        .last-updated {
-            color: #7f8c8d;
-            font-size: 0.9em;
+        .subtitle {
+            font-size: 1.1em;
+            opacity: 0.95;
         }
 
-        h2 {
-            color: #FFA500;
-            margin-top: 30px;
-            margin-bottom: 15px;
+        .content {
+            padding: 50px 30px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .intro h2 {
+            color: #2c3e50;
             font-size: 1.8em;
-            border-bottom: 2px solid #f0f0f0;
-            padding-bottom: 10px;
-        }
-
-        h3 {
-            color: #34495e;
-            margin-top: 20px;
-            margin-bottom: 10px;
-            font-size: 1.3em;
-        }
-
-        p {
-            margin-bottom: 15px;
-            text-align: justify;
-        }
-
-        ul {
-            margin-left: 30px;
             margin-bottom: 15px;
         }
 
-        li {
-            margin-bottom: 8px;
+        .intro p {
+            color: #7f8c8d;
+            font-size: 1.1em;
         }
 
-        .highlight {
-            background-color: #fff3cd;
-            padding: 15px;
-            border-left: 4px solid #FFA500;
-            margin: 20px 0;
-        }
-
-        .contact-info {
-            background-color: #f8f9fa;
-            padding: 20px;
-            border-radius: 8px;
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
             margin-top: 30px;
+        }
+
+        .card {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(255, 165, 0, 0.2);
+            border-color: #FFA500;
+        }
+
+        .card-icon {
+            font-size: 4em;
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            color: #2c3e50;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #7f8c8d;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .card-button {
+            background: linear-gradient(135deg, #FFA500 0%, #FF8C00 100%);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-weight: 600;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover .card-button {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(255, 165, 0, 0.4);
         }
 
         footer {
+            background-color: #2c3e50;
+            color: white;
             text-align: center;
-            padding: 30px 0;
-            margin-top: 40px;
-            border-top: 2px solid #f0f0f0;
-            color: #7f8c8d;
+            padding: 30px;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            color: #FFA500;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #FF8C00;
         }
 
         @media (max-width: 768px) {
-            .container {
-                padding: 15px;
-            }
-
             h1 {
                 font-size: 2em;
             }
 
-            h2 {
-                font-size: 1.5em;
+            header {
+                padding: 40px 20px;
             }
 
-            h3 {
-                font-size: 1.2em;
+            .content {
+                padding: 30px 20px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .intro h2 {
+                font-size: 1.5em;
             }
         }
     </style>
@@ -118,279 +174,43 @@
 <body>
     <div class="container">
         <header>
-            <h1>Política de Privacidad</h1>
-            <p style="font-size: 1.2em; color: #FFA500; font-weight: 600;">Taxi Ara Driver</p>
-            <p class="last-updated">Última actualización: 18 de Noviembre de 2025</p>
+            <h1>🚖 Taxi Ara</h1>
+            <p class="subtitle">Políticas de Privacidad</p>
         </header>
 
-        <section>
-            <h2>1. Introducción</h2>
-            <p>
-                En Taxi Ara, respetamos su privacidad y nos comprometemos a proteger sus datos personales.
-                Esta Política de Privacidad describe cómo recopilamos, usamos, almacenamos y protegemos la
-                información que usted proporciona al utilizar la aplicación Taxi Ara Driver (en adelante, "la Aplicación").
-            </p>
-            <p>
-                Al utilizar nuestra Aplicación, usted acepta las prácticas descritas en esta política.
-                Le recomendamos leer este documento detenidamente.
-            </p>
-        </section>
-
-        <section>
-            <h2>2. Información que Recopilamos</h2>
-
-            <h3>2.1 Información de Registro</h3>
-            <ul>
-                <li>Nombre completo</li>
-                <li>Número de teléfono</li>
-                <li>Dirección de correo electrónico</li>
-                <li>Número de documento de identidad</li>
-                <li>Fotografía de perfil</li>
-            </ul>
-
-            <h3>2.2 Información del Vehículo</h3>
-            <ul>
-                <li>Marca y modelo del vehículo</li>
-                <li>Número de placa</li>
-                <li>Documentos del vehículo (permiso de circulación, seguro, etc.)</li>
-                <li>Fotografías del vehículo</li>
-            </ul>
-
-            <h3>2.3 Datos de Ubicación</h3>
-            <p>
-                Recopilamos datos de ubicación GPS en tiempo real cuando:
-            </p>
-            <ul>
-                <li>Está disponible para recibir viajes (estado "Activo")</li>
-                <li>Está en ruta hacia un pasajero (estado "En Ruta")</li>
-                <li>Está realizando un viaje (estado "Ocupado")</li>
-            </ul>
-            <div class="highlight">
-                <strong>Importante:</strong> La recopilación de datos de ubicación se detiene automáticamente
-                cuando cambia su estado a "Inactivo". La ubicación en segundo plano solo funciona durante
-                viajes activos para garantizar la seguridad de los pasajeros y el correcto funcionamiento del servicio.
+        <div class="content">
+            <div class="intro">
+                <h2>Protegemos tu Privacidad</h2>
+                <p>Selecciona tu aplicación para ver la política de privacidad correspondiente</p>
             </div>
 
-            <h3>2.4 Información de Viajes</h3>
-            <ul>
-                <li>Historial de viajes realizados</li>
-                <li>Rutas tomadas durante los viajes</li>
-                <li>Fecha, hora y duración de cada viaje</li>
-                <li>Ubicación de origen y destino</li>
-                <li>Calificaciones otorgadas y recibidas</li>
-            </ul>
+            <div class="cards">
+                <a href="privacy_policy_driver.html" class="card">
+                    <div class="card-icon">👨‍✈️</div>
+                    <h3>Conductores</h3>
+                    <p>
+                        Política de privacidad para la aplicación de conductores.
+                        Información sobre ubicación en tiempo real, gestión de viajes y datos del vehículo.
+                    </p>
+                    <span class="card-button">Ver Política</span>
+                </a>
 
-            <h3>2.5 Mensajes de Chat</h3>
-            <ul>
-                <li>Mensajes intercambiados con pasajeros a través del chat integrado</li>
-                <li>Fecha y hora de los mensajes</li>
-            </ul>
-
-            <h3>2.6 Información del Dispositivo</h3>
-            <ul>
-                <li>Identificador único del dispositivo</li>
-                <li>Modelo y versión del sistema operativo</li>
-                <li>Token de notificaciones push (Firebase Cloud Messaging)</li>
-                <li>Información de red y conexión</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>3. Cómo Utilizamos su Información</h2>
-
-            <h3>3.1 Prestación del Servicio</h3>
-            <ul>
-                <li>Conectarlo con pasajeros que solicitan viajes</li>
-                <li>Mostrar su ubicación en tiempo real a los pasajeros durante viajes activos</li>
-                <li>Calcular rutas optimizadas</li>
-                <li>Facilitar la comunicación con los pasajeros</li>
-                <li>Procesar pagos y tarifas</li>
-            </ul>
-
-            <h3>3.2 Seguridad y Verificación</h3>
-            <ul>
-                <li>Verificar su identidad y documentación como conductor</li>
-                <li>Prevenir fraudes y actividades ilícitas</li>
-                <li>Resolver disputas entre conductores y pasajeros</li>
-                <li>Mantener un registro de viajes para auditorías de seguridad</li>
-            </ul>
-
-            <h3>3.3 Comunicaciones</h3>
-            <ul>
-                <li>Enviar notificaciones sobre nuevas solicitudes de viaje</li>
-                <li>Notificar cambios de estado en los viajes</li>
-                <li>Enviar mensajes del chat en tiempo real</li>
-                <li>Comunicar actualizaciones importantes de la aplicación</li>
-                <li>Proporcionar soporte técnico</li>
-            </ul>
-
-            <h3>3.4 Mejora del Servicio</h3>
-            <ul>
-                <li>Analizar patrones de uso para mejorar la aplicación</li>
-                <li>Desarrollar nuevas funcionalidades</li>
-                <li>Optimizar el sistema de asignación de viajes</li>
-                <li>Mejorar la experiencia del usuario</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>4. Compartir Información</h2>
-
-            <h3>4.1 Con Pasajeros</h3>
-            <p>Compartimos con los pasajeros:</p>
-            <ul>
-                <li>Su nombre y fotografía de perfil</li>
-                <li>Información del vehículo (marca, modelo, placa)</li>
-                <li>Su ubicación en tiempo real durante viajes activos</li>
-                <li>Su calificación promedio</li>
-            </ul>
-
-            <h3>4.2 Con Proveedores de Servicios</h3>
-            <p>Compartimos información con terceros que nos ayudan a operar el servicio:</p>
-            <ul>
-                <li><strong>Firebase (Google):</strong> Para notificaciones push y almacenamiento de mensajes de chat</li>
-                <li><strong>OpenStreetMap:</strong> Para mostrar mapas y calcular rutas</li>
-                <li><strong>Servicios de almacenamiento en la nube:</strong> Para guardar documentos e imágenes</li>
-            </ul>
-
-            <h3>4.3 Requisitos Legales</h3>
-            <p>
-                Podemos divulgar su información si así lo requiere la ley, una orden judicial,
-                o si creemos de buena fe que dicha divulgación es necesaria para:
-            </p>
-            <ul>
-                <li>Cumplir con obligaciones legales</li>
-                <li>Proteger nuestros derechos o propiedad</li>
-                <li>Prevenir fraudes o problemas de seguridad</li>
-                <li>Proteger la seguridad de los usuarios</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>5. Almacenamiento y Seguridad de Datos</h2>
-
-            <h3>5.1 Seguridad</h3>
-            <p>Implementamos medidas de seguridad técnicas y organizativas para proteger sus datos:</p>
-            <ul>
-                <li>Encriptación de datos sensibles en tránsito y en reposo</li>
-                <li>Almacenamiento seguro de credenciales mediante Flutter Secure Storage</li>
-                <li>Autenticación segura con verificación OTP</li>
-                <li>Tokens de sesión con vencimiento automático</li>
-                <li>Servidores protegidos con protocolos de seguridad estándar de la industria</li>
-            </ul>
-
-            <h3>5.2 Retención de Datos</h3>
-            <ul>
-                <li><strong>Información de perfil:</strong> Mientras su cuenta esté activa</li>
-                <li><strong>Historial de viajes:</strong> Se mantiene durante 3 años para propósitos legales y contables</li>
-                <li><strong>Mensajes de chat:</strong> Se conservan durante 90 días después de finalizado el viaje</li>
-                <li><strong>Datos de ubicación:</strong> Se almacenan únicamente durante viajes activos y en el historial asociado a cada viaje</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>6. Sus Derechos</h2>
-            <p>Usted tiene derecho a:</p>
-            <ul>
-                <li><strong>Acceder:</strong> Solicitar una copia de sus datos personales</li>
-                <li><strong>Rectificar:</strong> Corregir información incorrecta o desactualizada</li>
-                <li><strong>Eliminar:</strong> Solicitar la eliminación de su cuenta y datos asociados</li>
-                <li><strong>Restringir:</strong> Limitar el procesamiento de sus datos en ciertas circunstancias</li>
-                <li><strong>Portabilidad:</strong> Recibir sus datos en un formato estructurado y de uso común</li>
-                <li><strong>Oponerse:</strong> Rechazar ciertos tipos de procesamiento de datos</li>
-            </ul>
-            <p>
-                Para ejercer cualquiera de estos derechos, puede contactarnos a través de los medios
-                indicados en la sección "Contacto" al final de este documento.
-            </p>
-        </section>
-
-        <section>
-            <h2>7. Permisos de la Aplicación</h2>
-            <p>La Aplicación solicita los siguientes permisos en su dispositivo:</p>
-            <ul>
-                <li><strong>Ubicación:</strong> Para compartir su posición con pasajeros y calcular rutas</li>
-                <li><strong>Ubicación en segundo plano:</strong> Para mantener actualizada su ubicación durante viajes activos</li>
-                <li><strong>Cámara:</strong> Para tomar fotografías de perfil y documentos</li>
-                <li><strong>Almacenamiento:</strong> Para guardar y cargar imágenes y documentos</li>
-                <li><strong>Notificaciones:</strong> Para recibir alertas de nuevos viajes y mensajes</li>
-                <li><strong>Internet:</strong> Para comunicarse con nuestros servidores</li>
-            </ul>
-            <p>
-                Puede gestionar estos permisos en cualquier momento desde la configuración de su dispositivo.
-                Sin embargo, algunos permisos son esenciales para el funcionamiento de la Aplicación.
-            </p>
-        </section>
-
-        <section>
-            <h2>8. Cookies y Tecnologías Similares</h2>
-            <p>
-                La Aplicación utiliza tecnologías de almacenamiento local como SharedPreferences y
-                Secure Storage para:
-            </p>
-            <ul>
-                <li>Mantener su sesión activa</li>
-                <li>Recordar sus preferencias de configuración</li>
-                <li>Almacenar temporalmente datos en caché para mejorar el rendimiento</li>
-                <li>Guardar tokens de autenticación de forma segura</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>9. Menores de Edad</h2>
-            <p>
-                Nuestra Aplicación está diseñada para conductores profesionales mayores de 18 años.
-                No recopilamos intencionalmente información de menores de edad. Si descubrimos que
-                hemos recopilado datos de un menor, eliminaremos dicha información de inmediato.
-            </p>
-        </section>
-
-        <section>
-            <h2>10. Transferencias Internacionales de Datos</h2>
-            <p>
-                Sus datos pueden ser transferidos y procesados en servidores ubicados fuera de su país
-                de residencia. Cuando esto ocurra, implementamos medidas de seguridad adecuadas para
-                proteger sus datos de acuerdo con esta Política de Privacidad y las leyes aplicables.
-            </p>
-        </section>
-
-        <section>
-            <h2>11. Cambios a esta Política</h2>
-            <p>
-                Podemos actualizar esta Política de Privacidad ocasionalmente. Le notificaremos sobre
-                cambios significativos mediante:
-            </p>
-            <ul>
-                <li>Una notificación dentro de la Aplicación</li>
-                <li>Un correo electrónico a la dirección registrada</li>
-                <li>Actualización de la fecha "Última actualización" en la parte superior de este documento</li>
-            </ul>
-            <p>
-                Le recomendamos revisar periódicamente esta política para estar informado sobre cómo
-                protegemos su información.
-            </p>
-        </section>
-
-        <section>
-            <h2>12. Contacto</h2>
-            <div class="contact-info">
-                <p>
-                    Si tiene preguntas, inquietudes o solicitudes relacionadas con esta Política de Privacidad
-                    o el tratamiento de sus datos personales, puede contactarnos a través de:
-                </p>
-                <p style="margin-top: 15px;">
-                    <strong>Correo electrónico de soporte:</strong> <a href="mailto:Soporte@kynsoft.net" style="color: #FFA500; text-decoration: none;">Soporte@kynsoft.net</a>
-                </p>
-                <p style="margin-top: 15px;">
-                    Nos comprometemos a responder a su solicitud en un plazo máximo de 30 días hábiles.
-                </p>
+                <a href="privacy_policy_client.html" class="card">
+                    <div class="card-icon">🧑‍💼</div>
+                    <h3>Pasajeros</h3>
+                    <p>
+                        Política de privacidad para la aplicación de pasajeros.
+                        Información sobre solicitud de viajes, ubicaciones favoritas y métodos de pago.
+                    </p>
+                    <span class="card-button">Ver Política</span>
+                </a>
             </div>
-        </section>
+        </div>
 
         <footer>
             <p>&copy; 2025 Taxi Ara. Todos los derechos reservados.</p>
-            <p style="margin-top: 10px; font-size: 0.9em;">
-                Esta Política de Privacidad es efectiva a partir del 18 de Noviembre de 2025
+            <p style="margin-top: 10px;">
+                ¿Preguntas? Contáctanos en <a href="mailto:Soporte@kynsoft.net">Soporte@kynsoft.net</a>
             </p>
         </footer>
     </div>
