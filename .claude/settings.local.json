@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git pull:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nfix: corregir subtítulo a Taxi Ara Conductor en política de privacidad\n\nActualiza el subtítulo visible en el header de \"Taxi Ara Driver\" a \n\"Taxi Ara Conductor\" para mantener consistencia con el título del documento.\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git push:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
